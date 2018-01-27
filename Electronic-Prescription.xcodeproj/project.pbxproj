@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		8A6386BF201BEAF5003B84D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6386BE201BEAF5003B84D7 /* AppDelegate.swift */; };
-		8A6386C1201BEAF5003B84D7 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6386C0201BEAF5003B84D7 /* FirstViewController.swift */; };
-		8A6386C3201BEAF5003B84D7 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6386C2201BEAF5003B84D7 /* SecondViewController.swift */; };
 		8A6386C6201BEAF6003B84D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A6386C4201BEAF6003B84D7 /* Main.storyboard */; };
 		8A6386C8201BEAF6003B84D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A6386C7201BEAF6003B84D7 /* Assets.xcassets */; };
 		8A6386CB201BEAF6003B84D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A6386C9201BEAF6003B84D7 /* LaunchScreen.storyboard */; };
 		8A6386D6201BEAF6003B84D7 /* Electronic_PrescriptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6386D5201BEAF6003B84D7 /* Electronic_PrescriptionTests.swift */; };
 		8A6386E1201BEAF6003B84D7 /* Electronic_PrescriptionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6386E0201BEAF6003B84D7 /* Electronic_PrescriptionUITests.swift */; };
+		8A6386F1201BEE31003B84D7 /* PatientInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6386F0201BEE31003B84D7 /* PatientInfoViewController.swift */; };
+		8A6386F3201BEE4C003B84D7 /* DrugInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6386F2201BEE4C003B84D7 /* DrugInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +37,6 @@
 /* Begin PBXFileReference section */
 		8A6386BB201BEAF5003B84D7 /* Electronic-Prescription.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Electronic-Prescription.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A6386BE201BEAF5003B84D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8A6386C0201BEAF5003B84D7 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		8A6386C2201BEAF5003B84D7 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		8A6386C5201BEAF6003B84D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A6386C7201BEAF6003B84D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A6386CA201BEAF6003B84D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +47,8 @@
 		8A6386DC201BEAF6003B84D7 /* Electronic-PrescriptionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Electronic-PrescriptionUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A6386E0201BEAF6003B84D7 /* Electronic_PrescriptionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Electronic_PrescriptionUITests.swift; sourceTree = "<group>"; };
 		8A6386E2201BEAF6003B84D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A6386F0201BEE31003B84D7 /* PatientInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientInfoViewController.swift; sourceTree = "<group>"; };
+		8A6386F2201BEE4C003B84D7 /* DrugInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +100,12 @@
 			isa = PBXGroup;
 			children = (
 				8A6386BE201BEAF5003B84D7 /* AppDelegate.swift */,
-				8A6386C0201BEAF5003B84D7 /* FirstViewController.swift */,
-				8A6386C2201BEAF5003B84D7 /* SecondViewController.swift */,
 				8A6386C4201BEAF6003B84D7 /* Main.storyboard */,
 				8A6386C7201BEAF6003B84D7 /* Assets.xcassets */,
 				8A6386C9201BEAF6003B84D7 /* LaunchScreen.storyboard */,
 				8A6386CC201BEAF6003B84D7 /* Info.plist */,
+				8A6386F0201BEE31003B84D7 /* PatientInfoViewController.swift */,
+				8A6386F2201BEE4C003B84D7 /* DrugInfoViewController.swift */,
 			);
 			path = "Electronic-Prescription";
 			sourceTree = "<group>";
@@ -262,9 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A6386C3201BEAF5003B84D7 /* SecondViewController.swift in Sources */,
 				8A6386BF201BEAF5003B84D7 /* AppDelegate.swift in Sources */,
-				8A6386C1201BEAF5003B84D7 /* FirstViewController.swift in Sources */,
+				8A6386F3201BEE4C003B84D7 /* DrugInfoViewController.swift in Sources */,
+				8A6386F1201BEE31003B84D7 /* PatientInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,12 +430,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QTK4A3AW2R;
 				INFOPLIST_FILE = "Electronic-Prescription/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rossmarco.Electronic-Prescription";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rossmarco.electronicprescription;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -445,12 +447,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QTK4A3AW2R;
 				INFOPLIST_FILE = "Electronic-Prescription/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rossmarco.Electronic-Prescription";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rossmarco.electronicprescription;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
